@@ -1,0 +1,15 @@
+{% load static %}
+
+{% block title %}Employee Data{% endblock %}
+
+{% block content %}
+<h2>Employee form</h2>
+<hr>
+<form action="", method="post">
+    {{ form.as_p}}
+    {% csrf_token %}
+    <br>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
+
